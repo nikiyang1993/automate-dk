@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机时间网址打开器</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>随机时间网址打开器</h1>
+        
+        <nav>
+            <button class="nav-btn active">主页面</button>
+            <button class="nav-btn">时间设置</button>
+            <button class="nav-btn">网址管理</button>
+            <button class="nav-btn">历史记录</button>
+        </nav>
+
+        <div class="status-bar">
+            <span class="status">
+                <span class="status-dot"></span>
+                运行中
+            </span>
+            <button class="execute-btn">立即执行</button>
+        </div>
+
+        <div class="timer-container">
+            <h2>下次执行倒计时</h2>
+            <div class="timer" id="timer">02:45:29</div>
+            <button class="pause-btn">暂停</button>
+        </div>
+
+        <div class="history-section">
+            <h2>今日执行记录</h2>
+            <div class="history-list">
+                <div class="history-item">
+                    <span class="time">09:15:23</span>
+                    <span class="url">example.com/page1</span>
+                    <span class="status success">成功</span>
+                </div>
+                <div class="history-item">
+                    <span class="time">11:30:45</span>
+                    <span class="url">example.com/page2</span>
+                    <span class="status success">成功</span>
+                </div>
+                <div class="history-item">
+                    <span class="time">14:20:10</span>
+                    <span class="url">example.com/page3</span>
+                    <span class="status failed">失败</span>
+                </div>
+            </div>
+            <div class="history-summary">
+                今日共执行 3 次，成功率 67%
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html> 
